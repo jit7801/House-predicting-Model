@@ -13,6 +13,7 @@ To set up the necessary Python environment and dependencies for this project, ru
 
 ```bash
   pip install pandas scikit-learn
+```
 
 
 ## Feedback
