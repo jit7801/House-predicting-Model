@@ -12,7 +12,7 @@ A machine learning project that uses a Random Forest Regressor to predict reside
 To set up the necessary Python environment and dependencies for this project, run:
 
 ```bash
-  pip install pandas scikit-learn
+    pip install -U scikit-learn
 ```
 
 
