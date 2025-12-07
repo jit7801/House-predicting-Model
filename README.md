@@ -1,6 +1,7 @@
 # 🏠 House Price Prediction (Machine Learning)
 
 A machine learning project that uses a Random Forest Regressor to predict residential house prices. This project is for data science practitioners, developers, and anyone interested in predictive modeling using Python and scikit-learn.
+with very low MSE (Mean Squared Error) = 8 , which predicts price very close to actual Price.
 
 ## 📁 Project Contents
 
