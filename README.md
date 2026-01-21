@@ -1,54 +1,153 @@
-# 🏠 House Price Prediction (Machine Learning)
+# 🏠 House Price Prediction Web App (Predict.in)
 
-A machine learning project that uses a Random Forest Regressor to predict residential house prices. This project is for data science practitioners, developers, and anyone interested in predictive modeling using Python and scikit-learn.
-with very low MSE (Mean Squared Error) = 8 , which predicts price very close to actual Price.
+A machine learning–powered **House Price Prediction** project with a clean and responsive **web UI** built using **Flask, HTML, and CSS**. Users can enter house details and instantly get an estimated price based on a trained ML model.
 
-## 📁 Project Contents
+This project combines **data science + web development**, making it ideal for learning full-stack ML deployment.
 
-* **`Home_price_predictor.py`**: The core Python script that handles data loading, preprocessing (using `ColumnTransformer` and `OneHotEncoder`), model training, prediction, and evaluation.
-* **`house_price_dataset.csv`**: The raw dataset used for training the model.
+---
 
-## Deployment
+## 🚀 Features
 
-To set up the necessary Python environment and dependencies for this project, run:
+* 📊 Machine Learning–based house price prediction
+* 🌐 Web UI built with HTML & CSS
+* ⚡ Fast predictions using a pre-trained model
+* 🎨 Clean and responsive design
+* 📄 Multiple pages (Home, Models, Sign In, About Us)
 
-```bash
-    pip install -U scikit-learn
+---
+
+## 🛠️ Tech Stack
+
+* **Python**
+* **Flask** (Backend & Routing)
+* **Machine Learning** (Scikit-learn)
+* **HTML5 & CSS3** (Frontend)
+* **Jinja2** (Template Rendering)
+
+---
+
+## 📁 Project Structure
+
+```
+House-predicting-Model/
+│
+├── app.py                  # Flask backend
+│
+├── static/
+│   ├── style.css           # Main UI styles
+│   ├── about.css           # About page styles
+│   ├── modals.css          # Models page styles
+│   ├── sign.css            # Sign In / Sign Up styles
+│   └── web_logo.jpeg       # Project logo
+│
+├── templates/
+│   ├── index.html          # Home / Prediction page
+│   ├── aboutme.html        # About Us page
+│   ├── modals.html         # Model info page
+│   └── sign.html           # Login / Signup page
+│
+├── Home_price_predictor.py # Trained ML model
+├── requirements.txt        # Python dependencies
+└── README.md               # Project documentation
 ```
 
+---
 
-## Feedback
+## ⚙️ Installation & Setup
 
-If you have any feedback, please reach out to us at jiteshvishnoi0@gmail.com
+Follow these steps to run the project locally:
 
-
-## 🚀 About Me
-I'm a Data Science student
-
-
-## Run Locally
-
-Clone the project
+### 1️⃣ Clone the Repository
 
 ```bash
-  git clone https://github.com/jit7801/House-predicting-Model
+git clone https://github.com/jit7801/House-predicting-Model.git
+cd House-predicting-Model
 ```
 
-Go to the project directory
+### 2️⃣ Create a Virtual Environment (Recommended)
 
 ```bash
-  cd House-predicting-Model
+python -m venv venv
 ```
 
-Install dependencies
+Activate it:
+
+* **Windows**
 
 ```bash
-  pip install pandas scikit-learn
+venv\Scripts\activate
 ```
 
-Start the server
+* **Mac / Linux**
 
 ```bash
-  python Home_price_predictor.py
+source venv/bin/activate
 ```
 
+### 3️⃣ Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## ▶️ Running the Application
+
+```bash
+python app.py
+```
+
+After running the command, open your browser and go to:
+
+👉 **[http://127.0.0.1:5000/](http://127.0.0.1:5000/)**
+
+---
+
+## 🧠 How It Works
+
+1. User enters house details in the web form
+2. Data is sent to the Flask backend
+3. Backend loads the trained ML model
+4. Model predicts the house price
+5. Result is displayed instantly on the UI
+
+---
+
+## 📸 Screenshots
+<img width="1710" height="1112" alt="Screenshot 2026-01-21 at 9 58 42 PM" src="https://github.com/user-attachments/assets/2a6171f5-36e7-45ce-8123-67171367d400" />
+<img width="541" height="577" alt="Screenshot 2026-01-21 at 10 00 59 PM" src="https://github.com/user-attachments/assets/83ae770b-aef8-4fe6-a9d3-4855142fb40f" />
+<img width="521" height="609" alt="Screenshot 2026-01-21 at 10 01 22 PM" src="https://github.com/user-attachments/assets/f15243df-b3f9-4796-96a2-9da6dfa50ace" />
+<img width="1710" height="1112" alt="Screenshot 2026-01-21 at 9 59 09 PM" src="https://github.com/user-attachments/assets/273ca439-fc96-471d-ac91-04d437a67ce0" />
+<img width="1710" height="1112" alt="Screenshot 2026-01-21 at 9 59 26 PM" src="https://github.com/user-attachments/assets/6c26c445-4e69-4ccd-ae93-035173dc000c" />
+
+
+
+---
+
+## 📌 Future Improvements
+
+* 🔐 User authentication with database
+* 📈 Model performance comparison page
+* ☁️ Cloud deployment (Render / Railway / AWS)
+* 🗺️ Location-based price visualization
+
+---
+
+## 👨‍💻 Author
+
+**Jitesh Vishnoi**
+Founder & Developer
+Linkedin: **www.linkedin.com/in/hello-jitesh-vishnoi-381a04370**
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a **⭐ star** on GitHub — it really helps!
+
+Feel free to fork, improve, and use it for learning purposes.
+
+---
+
+> *Built with passion for Machine Learning & Web Development.* 💙
