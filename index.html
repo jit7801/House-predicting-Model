@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predict.in</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="navbar">
+        <img src="{{ url_for('static', filename='web_logo.jpeg') }}" alt="Predict.in logo featuring an eye with a crescent moon pupil integrated into an upward trending arrow graph line, with the text PREDICT below on a blue background">
+        <div class="link">
+            <a href="/modals">Modals</a>
+            <a href="/sign">SignIN/SignUp</a>
+            <a href="/aboutus">AboutUs</a>
+        </div>
+    </div>
+<div class="card">
+    <h2>HOUSE PRICE PREDICTOR</h2>
+
+    <form method="POST" action="/predict">
+        <input type="number" name="area" placeholder="Area (sqft)" required min="1">
+        <input type="number" name="bedrooms" placeholder="Bedrooms" required min="0">
+        <input type="number" name="bathrooms" placeholder="Bathrooms" required min="0">
+        <input type="number" name="stories" placeholder="Stories" required min="1">
+        <input type="number" name="parking" placeholder="Parking" required min="0">
+        <input type="text" name="city" placeholder="City" required>
+        <input type="number" name="age" placeholder="House Age (years)" required min="0">
+
+        <button type="submit">Predict Price</button>
+    </form>
+
+    {% if result %}
+    <div class="result">Predicted Price: ₹ {{ result }} Lakhs</div>
+    {% endif %}
+    
+    {% if error %}
+    <div class="error">Error: {{ error }}</div>
+    {% endif %}
+</div>
+
+</body>
+</html>

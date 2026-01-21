@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='sign.css') }}">
+    <title>Sign In / Sign Up - Predict.in</title>
+</head>
+<body>
+    <div class="navbar">
+        <img src="{{ url_for('static', filename='web_logo.jpeg') }}" alt="Predict.in logo">
+        <div class="link">
+            <a href="/">Home</a>
+            <a href="/modals">Modals</a>
+            <a href="/sign">SignIN/SignUp</a>
+            <a href="/aboutus">AboutUs</a>
+        </div>
+    </div>
+
+    <div class="auth-container">
+        <div class="auth-box">
+            <div class="tab-buttons">
+                <button class="tab-btn active" onclick="switchTab('signin')">Sign In</button>
+                <button class="tab-btn" onclick="switchTab('signup')">Sign Up</button>
+            </div>
+
+            <!-- Sign In Form -->
+            <div id="signin" class="form-container active">
+                <form>
+                    <div class="form-group">
+                        <label for="signin-email">Email Address</label>
+                        <input type="email" id="signin-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signin-password">Password</label>
+                        <input type="password" id="signin-password" required>
+                    </div>
+                    <div class="forgot-password">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="submit-btn">Sign In</button>
+                </form>
+                <div class="social-login">
+                    <button class="social-btn">👍</button>
+                    <button class="social-btn">🐦</button>
+                    <button class="social-btn">🔷</button>
+                </div>
+            </div>
+
+            <!-- Sign Up Form -->
+            <div id="signup" class="form-container">
+                <form>
+                    <div class="form-group">
+                        <label for="signup-name">Full Name</label>
+                        <input type="text" id="signup-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-email">Email Address</label>
+                        <input type="email" id="signup-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-password">Password</label>
+                        <input type="password" id="signup-password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-confirm">Confirm Password</label>
+                        <input type="password" id="signup-confirm" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Create Account</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function switchTab(tab) {
+            // Hide all forms
+            document.querySelectorAll('.form-container').forEach(el => {
+                el.classList.remove('active');
+            });
+            // Remove active class from all buttons
+            document.querySelectorAll('.tab-btn').forEach(el => {
+                el.classList.remove('active');
+            });
+            // Show selected form
+            document.getElementById(tab).classList.add('active');
+            // Add active class to clicked button
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
