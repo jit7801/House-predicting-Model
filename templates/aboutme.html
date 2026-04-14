@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
+    <title>About Us - Predict.in</title>
+    
+</head>
+<body>
+    <div class="navbar">
+        <img src="{{ url_for('static', filename='web_logo.jpeg') }}" alt="Predict.in logo">
+        <div class="link">
+            <a href="/">Home</a>
+            <a href="/modals">Modals</a>
+            <a href="/sign">SignIN/SignUp</a>
+            <a href="/aboutus">AboutUs</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="about-header">
+            <h1>About Predict.in</h1>
+            <p>We are a team of data scientists and engineers dedicated to providing accurate house price predictions using machine learning and advanced analytics.</p>
+        </div>
+
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3>Accurate Predictions</h3>
+                <p>Our advanced ML algorithms provide highly accurate house price predictions based on multiple factors.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Lightning Fast</h3>
+                <p>Get instant predictions with our optimized algorithm that processes data in milliseconds.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h3>Secure & Private</h3>
+                <p>Your data is encrypted and never shared. We prioritize your privacy and security.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Data Driven</h3>
+                <p>Our predictions are based on real estate market data and historical trends.</p>
+            </div>
+        </div>
+
+        <div class="team-section">
+            <h2>Our Team</h2>
+            <div class="team-members">
+                <div class="member">
+                    <div class="member-avatar">👨‍💼</div>
+                    <h3>Jitesh Vishnoi</h3>
+                    <p>Founder & Developer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
