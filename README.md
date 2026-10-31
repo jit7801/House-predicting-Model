@@ -114,12 +114,6 @@ After running the command, open your browser and go to:
 
 ---
 
-## 📸 Screenshots
-
-*(Add screenshots of Home Page, Prediction Result, About Page here)*
-
----
-
 ## 📌 Future Improvements
 
 * 🔐 User authentication with database
